@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+body {
+    background-image: url(https://images.pexels.com/photos/2407636/pexels-photo-2407636.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: black
+}
+h1 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:white;
+    text-align: center;
+    padding-top: 8px;
+}
+header {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+section {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    column-gap: 20px;
+    row-gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+.intro {
+    transition: all .2s ease-in-out; 
+    opacity: 0.7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color:rgb(138, 153, 174);
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.intro:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.boracay {
+    transition: all .2s ease-in-out; 
+    opacity: 0.7;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgb(138, 153, 174);
+    width: 250px;
+    height: 225px;
+}
+.boracay:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.boracay2 {
+    transition: all .2s ease-in-out; 
+    opacity: 0.7;
+    border: 2px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-image: url(https://images.pexels.com/photos/11686040/pexels-photo-11686040.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 250px;
+    height: 225px;
+}
+.boracay2:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.bohol {
+    transition: all .2s ease-in-out; 
+    opacity: 0.7;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgb(138, 153, 174);
+    width: 250px;
+    height: 225px;
+}
+.bohol:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.bohol2 {
+    transition: all .2s ease-in-out; 
+    opacity: 0.7;
+    border: 2px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-image: url(https://images.pexels.com/photos/8095282/pexels-photo-8095282.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 250px;
+    height: 225px;
+}
+.bohol2:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.ifugao {
+    transition: all .2s ease-in-out; 
+    opacity: 0.7;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: rgb(138, 153, 174);
+    width: 250px;
+    height: 225px;
+}
+.ifugao:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+.ifugao2 {
+    transition: all .2s ease-in-out; 
+    opacity: 0.7;
+    border: 2px solid white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    background-image: url(https://images.pexels.com/photos/6964907/pexels-photo-6964907.jpeg);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 250px;
+    height: 225px;
+}
+.ifugao2:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+footer {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+.references {
+    transition: all .2s ease-in-out; 
+    opacity: 0.7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+    padding-right: 80px;
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color:rgb(138, 153, 174);
+    width: 800px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.references:hover {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            <pre>
+P  H  I  L  I  P  P  I  N  E    G  A  L  L  E  R  Y
+            </pre>
+        </h1>
+        <hr/>
+        <div class="intro">
+            <p>
+                The Philippines is a country located in Asia, 
+                specifically in the Southeast. It consists of more than 7,000 islands,
+                making the country an archipelago .
+                The country is known for its diverse geography, 
+                which includes mountains, plains, and coastal areas. 
+                Here are the top travel spots in the Phillipines.
+            </p>
+        </div>
+    </header>   
+    <section>
+        <div class="boracay">
+            <h1>
+                Boracay
+            </h1>
+            <p>
+                This is one of the best tourist destinations in the Philippines. 
+                This gorgeous beach has crystal clear waters and beautiful white sand.
+                Boracay also has 5 star hotels, making the place a famous honeymoon spot.
+            </p>
+        </div>
+        <a href="https://www.pexels.com/photo/motorboat-on-body-of-water-11686040/" target="_blank">
+            <div class="boracay2">
+            </div>
+        </a>
+        <div class="bohol">
+            <h1>
+                Bohol
+            </h1>
+            <p>
+                The Chocolate Hills of Bohol are truly a geomorphic wonder.
+                Unfortunately, they aren't made of chocolate.
+                The Chocolate Hills is a must-visit when you go to Bohol.
+            </p>
+        </div>
+        <a href="https://www.pexels.com/photo/the-chocolate-hills-in-the-philippines-8095282/" target="_blank">
+            <div class="bohol2">
+            </div>
+        </a>
+        <div class="ifugao">
+            <h1>
+                Ifugao
+            </h1>
+            <p>
+                The Banaue Rice Terraces of Ifugao is a beautifully
+                made structure made by the people of Ifugao 2000 years ago.
+                The emerald green hue of this destination is a must-see 
+                when you visit Ifugao.
+            </p>
+            </div>
+        <a href="https://www.pexels.com/photo/beautiful-landscape-with-rays-of-sunlight-6964907/" target="_blank">
+            <div class="ifugao2">
+            </div>
+        </a>
+        </div>
+    </section>
+    <footer>
+        <div class="references">
+            <h1>
+                References
+            </h1>
+            <p>
+                Cullaine, M. (2024). Philippines. Brittanica.
+                <a href="https://www.britannica.com/place/Philippines" target="_blank">
+                    Phillippines.
+                </a>
+                <br/>
+                Yañez, G. (n.d). 15 Best Tourist Spots in the Philippines: Beaches, Diving Spots, Rivers, Waterfalls, Historic Sites. Guide To the Philippines.
+                <a href="https://guidetothephilippines.ph/articles/what-to-experience/top-tourist-spots-philippines" target="_blank">
+                    15 Best Tourist Spots in the Philippines: Beaches, Diving Spots, Rivers, Waterfalls, Historic Sites.
+                </a>
+                <br/>
+                For the image references. Click the image itself.
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

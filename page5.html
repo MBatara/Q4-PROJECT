@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Comments</title>
+</head>
+<style>
+    body {
+        background-image: linear-gradient(to bottom, rgb(10,12,13), rgb(29,32,36)); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;
+        color: white;
+    }
+    h4 {
+        margin-top: 100px;
+        padding-left: 80px;
+    }
+    img {
+        height: 40px;
+        padding-right: 10px;
+    }
+    .nav-item {
+        position: relative;
+    }
+    .dropdown-menu a:hover {
+        background-color: #495057; 
+    }
+    .addcomment {
+        margin-top: 20px;
+        margin-left: 80px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .goodbye {
+        margin-left: 80px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pinnedcomment {
+        width: 1000px;
+    }
+    .thecomment {
+        width: 800px;
+        display: none;
+    }
+    .pfp {
+        display: none;
+    }
+    .insights {
+        margin-left: 20px; 
+    }
+</style>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav d-flex">
+                <a href="mainpage.html"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png"></a>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">HTML (Q1)</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="page1.html" target="_blank">Healthy Meal Plan</a></li>
+                        <li><a class="dropdown-item text-light" href="page2.html" target="_blank">Noli me Tangere Characters</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">CSS (Q2)</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="page3.html" target="_blank">Paul's Pizza</a></li>
+                        <li><a class="dropdown-item text-light" href="page4.html" target="_blank">Philippine Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">Bootstrap (Q3)</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="https://mbatara.github.io/Q3-SEATWORK1/" target="_blank">Pokemon Ruby, Sapphire and Emerald</a></li>
+                        <li><a class="dropdown-item text-light" href="https://mbatara.github.io/Q3-PROJECT/" target="_blank">Ryan Gosling Wiki</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">JavaScript (Q4)</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="https://mbatara.github.io/Q4-SEATWORK1/ICT/4thQtr/SW1/" target="_blank">Currency Converter</a></li>
+                        <li><a class="dropdown-item text-light" href="https://mbatara.github.io/Q4-SEATWORK2/" target="_blank">Arithmetic Calculator</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" role="button">Comments</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="⌕ Search">
+                <button class="btn btn-secondary" type="button">⌕</button>
+            </form>
+        </div>
+    </nav>
+    <h4>Comments</h4>
+    <div class="addcomment">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png">
+        <input type="text" id="comment" class="form-control bg-dark text-light me-2 w-50" placeholder="Add a comment..."> 
+        <button class=" btn btn-dark" id="commButton" onclick="textMessage()">Comment</button>
+    </div>
+    <hr>
+    <div class="goodbye">
+        <img src="https://png.pngtree.com/png-vector/20220909/ourmid/pngtree-smiley-flower-cute-png-image_6144823.png">
+        <div class="pinnedcomment">
+            <h6>@areef <span class="text-secondary">• The Creator • 2 years ago • 📌</span></h6>
+            <p>
+              Thanks for viewing my website. It was really fun making this website,
+              coming up with unique ideas, like this actually functional comment section 
+              (yes, try commenting, it will actually comment it) and the viewable username.
+              It was a fun year of ICT, better than the grueling online ICT I had during Grade 8
+              (Scratch is fun though). Hmmmm. About my favorite website I made this year...
+              My favorite website that I made this school year is probably the 
+              Third quarter Seatwork 1 (the Pokemon wiki) because I am a Pokemon fan since I was 6
+              + applying all the knowledge I had about the game in a school project is pretty cool.
+              So, Whats next?, heard that we will learn about Python in Grade 10 ICT, a game making 
+              coding language if I recall. Speaking of games, I realized I loved making games when we had to learn 
+              Scratch in Grade 8 (Check this out https://scratch.mit.edu/projects/815461420/) although
+              online ICT was pretty draining. Anyways I really enjoyed this school year, I may love making
+              games more but I love making websites also. I really learnt alot and I would probably apply the things
+              I learnt on the future if I pursue a tech course. Also I would like to give my 
+              thanks to my ICT teacher Ms. Pasco. So this is my goodbye to making silly HTML websites. 
+              See you around I guess.
+            </p>
+        </div>
+    </div>
+    <div class="goodbye">
+        <div class="pfp" id="commentPfp"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png"></div>
+        <div class="thecomment" id="commentText">
+            <h6>@<span id="username"></span><span class="text-secondary">• 1 second ago</span></h6>
+            <p id="message">
+            </p>
+        </div>
+    </div>
+    <script>
+        const uname = localStorage.getItem("userName");
+        document.getElementById("username").innerHTML = uname; //your username that you inputed in the login page
+        function textMessage() {
+            const text = document.getElementById("comment").value;
+            document.getElementById("message").innerHTML = text; //to show your comment
+        }
+        document.getElementById('commButton').addEventListener('click', function() {
+        var commentText = document.getElementById("commentText");
+        commentText.style.display = 'block'; //to show the hidden div comment thing
+        });
+        document.getElementById('commButton').addEventListener('click', function() {
+        var commentPfp = document.getElementById("commentPfp");
+        commentPfp.style.display = 'block'; //same thing as earlier
+        });
+    </script>
+</body>
+</html>

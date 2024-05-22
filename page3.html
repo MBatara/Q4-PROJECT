@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seatwork 1</title>
+    <style>
+        header {
+            background-image: url(https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQcHbxCjB7FY6Rttw1VZFdh0gIZmm4MLLjfmD0dhA11saxBKG_D49VVkmlvz3sE71-b);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: rgb(255, 0, 0);
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 20px;
+            border: 5px solid rgb(255, 255, 255);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .baby {
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 20px;
+        }
+        .home {
+            background-color: rgb(0, 0, 0);
+            padding: 5px;
+            border-radius: 20px;
+        }
+        body {
+            background-image: url(https://files.123freevectors.com/wp-content/original/119278-abstract-bright-red-background.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        p {
+            text-shadow: 5px 3px 0px rgba(0,0,0,0.6);
+        }
+        .welcoming {
+            color: rgb(255, 255, 255);
+            display: flex;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            justify-content: center;
+            column-gap: 100px;
+            text-shadow: 5px 3px 0px rgba(0,0,0,0.6);
+        }
+        .pizza1 {
+            height: 300px;
+            width: 300px;
+            border-radius: 50px;
+            border: 5px solid white;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .pizzas {
+            display: flex;
+            flex-wrap: wrap;
+            column-gap: 20px;
+            row-gap: 20px;
+            justify-content: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-left: 300px;
+            padding-right: 300px;
+            color: white;
+        }
+        button {
+            background-color: rgb(20, 20, 20);
+            color: rgb(255, 0, 0);
+            border-radius: 20px;
+            height:30px;
+            width: 150px;
+        }
+        .menu1 {
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            width: 200px;
+            padding-bottom: 20px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .menu2 {
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            width: 200px;
+            padding-bottom: 20px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .menu3 {
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            width: 200px;
+            padding-bottom: 20px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .menu4 {
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            width: 200px;
+            padding-bottom: 20px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .menu5 {
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            width: 200px;
+            padding-bottom: 20px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .menu6 {
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            width: 200px;
+            padding-bottom: 20px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .menu7 {
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            width: 200px;
+            padding-bottom: 20px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .menu8 {
+            border: 5px solid rgb(255, 255, 255);
+            border-radius: 30px;
+            text-align: center;
+            width: 200px;
+            padding-bottom: 20px;
+            background-color: rgb(255, 0, 0);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .pizza2 {
+            height: 100px;
+            width: 100px;
+        }
+        footer {
+            background-image: url(https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcQcHbxCjB7FY6Rttw1VZFdh0gIZmm4MLLjfmD0dhA11saxBKG_D49VVkmlvz3sE71-b);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color:rgb(255, 0, 0);
+            color: rgb(255, 255, 255);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            border-radius: 20px;
+            border: 5px solid white;
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        }
+        .name {
+            background-color: black;
+        }
+        .references {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 0, 0)
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header2">
+            <h1>
+                <span class="baby">
+                    Paul's Pizza
+                </span>
+            </h1>
+            <hr>
+            <p>
+                <span class="home">
+                    Home | About | Contact
+                </span>
+            </p>
+        </div>
+    </header>
+    <section class="welcoming">
+        <div class="info">
+            <h3>Welcome to</h3>
+            <h1>
+                    Paul's Pizza
+            </h1>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>View menu</button></a>
+        </div>
+        <img class="pizza1" src="https://media-cdn.tripadvisor.com/media/photo-s/11/9f/fa/37/photo1jpg.jpg" alt="pizza1">
+    </section>
+    <section class="pizzas">
+        <div class="menu1">
+            <h3>Friday's Special</h3>
+            <img class="pizza2" src="https://www.regalosapinas.com/wp-content/uploads/2021/06/FRIDAY-SPECIAL.png">
+            <p>Anchovies and shrimp<br/>(₱750)</p>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>Add to cart</button></a>
+        </div>
+        <div class="menu2">
+            <h3>Pepperoni</h3>
+            <img class="pizza2" src="https://shakeys-zeus-prod.s3.amazonaws.com/images/Pepp_pEhPrnr.png">
+            <p>Pepperoni and cheese<br/>(₱750)</p>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>Add to cart</button></a>
+        </div>
+        <div class="menu3">
+            <h3>Truffle Four Cheese</h3>
+            <img class="pizza2" src="https://shakeys-zeus-prod.s3.amazonaws.com/images/TFC.png">
+            <p>Truffle and cheese<br/>(₱750)</p>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>Add to cart</button></a>
+        </div>
+        <div class="menu4">
+            <h3>Angus Beef</h3>
+            <img class="pizza2" src="https://shakeys-zeus-prod.s3.amazonaws.com/images/Angust-Steakhouse_4rs7XuV.png">
+            <p>Beef and onions<br/>(₱750)</p>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>Add to cart</button></a>
+        </div>
+        <div class="menu5">
+            <h3>Spinach and Shrimp</h3>
+            <img class="pizza2" src="https://shakeys-zeus-prod.s3.amazonaws.com/images/Spinach-shrimp-Prod-images-500x500_Ba6fgX8.png">
+            <p>Shrimp and spinach<br/>(₱750)</p>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>Add to cart</button></a>
+        </div>
+        <div class="menu6">
+            <h3>Belly Buster</h3>
+            <img class="pizza2" src="https://shakeys-zeus-prod.s3.amazonaws.com/images/Belly-Buster.png">
+            <p>Various meats and veggies<br/>(₱750)</p>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>Add to cart</button></a>
+        </div>
+        <div class="menu7">
+            <h3>Manager's Choice</h3>
+            <img class="pizza2" src="https://shakeys-zeus-prod.s3.amazonaws.com/images/MC_KbgxNQk.png">
+            <p>Ham and bellpeppers<br/>(₱750)</p>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>Add to cart</button></a>
+        </div>
+        <div class="menu8">
+            <h3>Paul's Special</h3>
+            <img class="pizza2" src="https://shakeys-zeus-prod.s3.amazonaws.com/images/Shakeys-Special.png">
+            <p>Mushroom and bellpeppers (₱750)</p>
+            <a href="https://www.shakeyspizza.ph/" target="_blank"><button>Add to cart</button></a>
+        </div>
+    </section>
+    <footer>
+        <p>Areef Batara | 9-Emerald</p>
+        <a href="https://www.shakeyspizza.ph/" target="_blank"><button class="references">References</button></a></p>
+    </footer>
+</body>
+</html>

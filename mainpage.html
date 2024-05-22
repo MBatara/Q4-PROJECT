@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Home Page</title>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom, rgb(10,12,13), rgb(29,32,36)); background-attachment: fixed; background-repeat: no-repeat; background-size: cover;
+            color: white;
+        }
+        .dropdown-menu a:hover {
+            background-color: #495057; 
+        }
+        .nav-item {
+            position: relative;
+        }
+        .pages:hover {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+        .username {
+            font-weight: bold;
+        }
+        .intro {
+            text-align: center;
+            margin-top: 150px;
+        }
+        img {
+            height: 150px;
+            border-radius: 15px;
+        }
+        body > nav > .container-fluid > ul > img {
+            height: 40px;
+            padding-right: 10px;
+        }
+        table {
+            margin: auto; margin-top: 75px;
+        }
+        p {
+            font-weight: bold;
+            margin-top: 8px;
+        }
+        .pages {
+            width: 300px;
+            margin: 20px;
+            padding-top: 10px; padding-left: 10px; padding-right: 10px;
+            background-color: rgb(29,32,36);
+            border-radius: 10px;
+            border: 2px solid white;
+            transition: all .2s ease-in-out; 
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <ul class="navbar-nav d-flex">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Default_pfp.svg/2048px-Default_pfp.svg.png">
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">HTML (Q1)</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="page1.html" target="_blank">Healthy Meal Plan</a></li>
+                        <li><a class="dropdown-item text-light" href="page2.html" target="_blank">Noli me Tangere Characters</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">CSS (Q2)</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="page3.html" target="_blank">Paul's Pizza</a></li>
+                        <li><a class="dropdown-item text-light" href="page4.html" target="_blank">Philippine Gallery</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">Bootstrap (Q3)</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="https://mbatara.github.io/Q3-SEATWORK1/" target="_blank">Pokemon Ruby, Sapphire and Emerald</a></li>
+                        <li><a class="dropdown-item text-light" href="https://mbatara.github.io/Q3-PROJECT/" target="_blank">Ryan Gosling Wiki</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#"  role="button" data-bs-toggle="dropdown">JavaScript (Q4)</a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-light" href="https://mbatara.github.io/Q4-SEATWORK1/ICT/4thQtr/SW1/" target="_blank">Currency Converter</a></li>
+                        <li><a class="dropdown-item text-light" href="https://mbatara.github.io/Q4-SEATWORK2/" target="_blank">Arithmetic Calculator</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="page5.html" role="button">Comments</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="text" placeholder="⌕ Search">
+                <button class="btn btn-secondary" type="button">⌕</button>
+            </form>
+        </div>
+    </nav>
+    <div class="intro">
+        <h1>Hello <span id="username" class="username"></span>!</h1>
+        <h4>to a portfolio of websites</h3>
+        <div class="tablepages">
+            <table>
+                <tr>
+                    <th colspan="4">Top Pages</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="pages">
+                            <a href="page2.html" target="_blank"><img src="https://newsnownigeria.ng/wp-content/uploads/2024/03/is-noli-me-tangere-based-on-a-true-story-643fbf5c2baee67752237-900.webp.webp"></a>
+                            <p>Noli me Tangere Wiki</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pages">
+                            <a href="page4.html" target="_blank"><img src="https://images.pexels.com/photos/2407636/pexels-photo-2407636.jpeg"></a>
+                            <p>Philippine Gallery</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pages">
+                            <a href="https://mbatara.github.io/Q3-PROJECT/" target="_blank"><img src="https://www.sheknows.com/wp-content/uploads/2018/12/qebvppubfld27vkuhkgw.jpeg?w=1920"></a>
+                            <p>Ryan Gosling Wiki</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pages">
+                            <a href="https://mbatara.github.io/Q4-SEATWORK2/" target="_blank"><img src="https://i.ytimg.com/vi/MoIknN7SNts/maxresdefault.jpg"></a>
+                            <p>Arithmetic Calculator</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th colspan="4">Other Pages</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="pages">
+                            <a href="page1.html" target="_blank"><img src="https://irepo.primecp.com/2019/10/426666/Skillet-Chicken-and-Veggies-updated_UserCommentImage_ID-3415808.jpg?v=3415808"></a>
+                            <p>Healthy Meal Plan</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pages">
+                            <a href="page3.html" target="_blank"><img src="https://static.shakeys.com/resources/images/menu-pages/pizza/shakeys-special.jpeg"></a>
+                            <p>Paul's Pizza</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pages">
+                            <a href="https://mbatara.github.io/Q3-SEATWORK1/" target="_blank"><img src="https://pokejungle.net/wp-content/uploads/2015/12/gen-3-starters.png"></a>
+                            <p>Pokemon Ruby, Sapphire & Emerald</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="pages">
+                            <a href="https://mbatara.github.io/Q4-SEATWORK1//ICT/4thQtr/SW1/" target="_blank"><img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/2PQ2VFU2FFLZTERSQ6MEA2OC7U.jpg"></a>
+                            <p>Currency Converter ($ to £,₱,¥) </p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        const uname = localStorage.getItem("userName");
+        document.getElementById("username").innerHTML = uname;
+       // to display the username the person entered in the login page :)
+    </script>
+</body>
+</html>
